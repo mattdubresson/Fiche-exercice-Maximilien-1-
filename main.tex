@@ -1,0 +1,115 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{amsmath, amssymb}
+\usepackage{graphicx}
+\usepackage{geometry}
+\geometry{margin=2cm}
+\usepackage{enumitem}
+\usepackage{float}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\pagestyle{fancy}
+
+% Nettoyer les styles par défaut
+\fancyhf{}
+
+% En-têtes
+\fancyhead[L]{Fiches d'exercices pour Maximilien (1)} % à gauche
+\fancyhead[R]{Matteo Dubresson} % à droite
+
+% Pieds de page
+\fancyfoot[C]{\thepage} % numéro de page centré
+
+%Titre et généralités
+\title{Fiche d'exercices \\ pour Maximilien (1)}
+\date{25/09/2025}
+\author{}
+
+%Espace entre les subsections
+\titlespacing*{\subsection}{0pt}{5ex plus 0.5ex minus 0.2ex}{1.5ex plus 0.2ex}
+
+
+
+
+\begin{document}
+
+\maketitle
+
+\subsection*{Exercice 1 : }
+
+\[
+(u_n) \begin{cases} 
+u_0 = 1 \\ 
+u_{n+1} = \dfrac{9}{6 - u_n}
+\end{cases}
+\]
+
+Montrer par récurrence :  
+\[0 < u_n < 3 \quad \forall \, n \in \mathbb{N}\]
+
+\bigskip
+
+\subsection*{Exercice 2 : }
+Soit a et b deux réels. On considère la proposition suivante : si a + b est irrationnel, alors a ou b sont irrationnels.
+
+\begin{enumerate}
+    \item Quelle est la contraposée de cette proposition?
+    \item Démontrer la proposition.
+    \item Est-ce que la réciproque de cette proposition est toujours vraie?
+\end{enumerate}
+
+\bigskip
+
+\subsection*{Exercice 3 : }
+Montrer que 
+\[
+n! \geq 2^n \quad \forall \, n \geq 4
+\]
+
+\bigskip
+
+
+\subsection*{Exercice 4 :}
+ 
+\begin{enumerate}
+    \item Soit $a \in \mathbb{R}$ tel que $a > 0$. Montrer par récurrence que pour tout $n \in \mathbb{N}$ :
+    \[
+    (1 + a)^n \ge 1 + n a
+    \]
+    \item En déduire la limite de la suite $(v_n)$ définie pour tout $n \in \mathbb{N}^*$ par $v_n = \left(\frac{4}{3}\right)^n$.
+\end{enumerate}
+
+\bigskip
+
+\subsection*{Exercice 5 :}
+
+On considère la suite $(x_n)$ définie par $x_0 = 1$, $x_1 = 3$ et pour tout $n \in \mathbb{N}$ :
+\[
+x_{n+2} = 4x_{n+1} - 3x_n
+\]
+
+\begin{enumerate}
+    \item Calculer $x_2$ et $x_3$.
+    \item Soient les propositions $A(n) : « \, x_n = 3^n \, »$ et $B(n) : « \, x_{n+1} = 3^{n+1} \, »$.
+    \item Montrer par récurrence double (ou forte) que pour tout $n \in \mathbb{N}$, la proposition $(A(n) \text{ ET } B(n))$ est vraie.
+\end{enumerate}
+
+
+\bigskip
+
+
+\subsection*{Exercice 6 : }
+
+Soit $(u_n)$ la suite définie pour tout $n \in \mathbb{N}$ par :
+\[
+u_n = 3^{2n+1} + 2^{n+2}
+\]
+
+\begin{enumerate}
+    \item Calculer $u_0$ et $u_1$.
+    \item Montrer que pour tout $n \in \mathbb{N}$, $u_n$ est un multiple de $7$.
+\end{enumerate}
+
+\end{document}
